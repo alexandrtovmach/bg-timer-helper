@@ -1,14 +1,14 @@
 {
   "name": "bg-timer-helper",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Mini-tool for help save timers in cases when window unfocused (mobile screen turned off, switched tab, etc.)",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/alexandrtovmach/bg-timer-helper"
+    "type": "git",
+    "url": "https://github.com/alexandrtovmach/bg-timer-helper"
   },
   "homepage": "https://github.com/alexandrtovmach/bg-timer-helper",
   "keywords": [
