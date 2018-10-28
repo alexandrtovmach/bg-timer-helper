@@ -22,6 +22,15 @@ This small package initalize AudioContext on the page for [modern browsers](http
 
 ## Get Started
 
+### Install
+```
+npm install --save bg-timer-helper
+```
+or with `yarn`
+```
+yarn add bg-timer-helper
+```
+
 ### React
 ```
 import BgTimerHelper from 'bg-timer-helper';
