@@ -1,6 +1,6 @@
 {
   "name": "bg-timer-helper",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Mini-tool for help save timers in cases when window unfocused (mobile screen turned off, switched tab, etc.)",
   "main": "index.js",
   "scripts": {

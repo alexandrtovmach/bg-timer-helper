@@ -1,17 +1,20 @@
 export default class BgTimerHelper {
   constructor() {
-    this.aCtx = new AudioContext();
-    this.track = this.aCtx.createConstantSource();
-    this.gainNode = this.aCtx.createGain();
-    this.gainNode.gain.value = 0.005;
-    this.gainNode.connect(this.aCtx.destination);
+    this.audioContext = new AudioContext();
+    const gainNode = this.audioContext.createGain();
+    gainNode.gain.value = 0.0001;
+    gainNode.connect(this.audioContext.destination);
   }
 
   enable() {
-    this.track.connect(this.aCtx.destination);
+    this.source = this.audioContext.createOscillator();
+    this.source.frequency.setValueAtTime(0.0001, this.audioContext.currentTime);
+    this.source.connect(this.audioContext.destination);
+    this.source.start();
   }
 
   disable() {
-    this.track.disconnect(this.aCtx.destination);
+    this.source.stop();
+    this.source.disconnect(this.audioContext.destination);
   }
 }
